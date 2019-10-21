@@ -28,7 +28,6 @@ elif [[ "$DOCKER_TAG" =~ v[0-9]+\.[0-9]+\.[0-9]+$ ]]; then
     DOCKER_NEWTAG="latest"
 else
     echo "ERROR: Invalid docker tag."
-    exit 1
 fi
 
 echo "Adding tag '$DOCKER_NEWTAG' to image..."
